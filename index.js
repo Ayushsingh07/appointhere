@@ -31,7 +31,7 @@ client.on('ready', () => {
 
 
 
-mongoose.connect(process.env.mongo, { useNewUrlParser: true, useUnifiedTopology: true });
+mongoose.connect("mongodb+srv://nqu7069:nqu7069@cluster0.29rssto.mongodb.net", { useNewUrlParser: true, useUnifiedTopology: true });
 
 // Create a function that takes the client object as an argument and returns the message router middleware
 const getMessageRouter = (client) => {
